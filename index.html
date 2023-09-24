@@ -6,7 +6,7 @@
     <title>Your Website</title>
     <style>
         body {
-            background-color: white; /* White background */
+            background-color: white;
             color: white;
             display: flex;
             flex-direction: column;
@@ -14,10 +14,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            overflow: hidden; /* Hide horizontal scrollbar caused by flashing text */
+            overflow: hidden;
         }
 
-        /* Rainbow flashing animation */
         @keyframes rainbow {
             0% { color: red; }
             14% { color: orange; }
@@ -30,11 +29,124 @@
         }
 
         h1 {
-            animation: rainbow 3s linear infinite; /* Apply the rainbow animation to the h1 element */
+            animation: rainbow 3s linear infinite;
+        }
+
+        /* Additional Section Styles */
+        .section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Bin Text Styles */
+        .bin-text {
+            font-size: 24px; /* Adjust the font size as needed */
+            animation: rainbow 3s linear infinite;
+            cursor: pointer;
+        }
+
+        /* Hidden Content Styles */
+        .hidden-content {
+            display: none;
+            text-align: center;
+        }
+
+        /* Show the hidden content when the Bin text is clicked */
+        .show-content:focus + .hidden-content {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <h1>cutecatfan227</h1>
+    <a href="#bin-content" class="show-content">
+        <span class="bin-text">Bin</span>
+    </a>
+
+    <!-- Additional Section -->
+    <div class="section" id="bin-content">
+        <h2>Welcome to the Bin</h2>
+        <p>This is where you'll find out if somebody has been binned yet.</p>
+    </div>
+
+    <!-- Hidden Content -->
+    <div class="hidden-content">
+        <h2>Nobody has been Binned Yet</h2>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            background-color: white;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        h1 {
+            animation: rainbow 3s linear infinite;
+        }
+
+        /* Additional Section Styles */
+        .section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Bin Text Styles */
+        .bin-text {
+            font-size: 24px; /* Adjust the font size as needed */
+            animation: rainbow 3s linear infinite;
+            cursor: pointer;
+        }
+
+        /* Hidden Content Styles */
+        .hidden-content {
+            display: none;
+            text-align: center;
+        }
+
+        /* Show the hidden content when the Bin text is clicked */
+        .show-content:focus + .hidden-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#bin-content" class="show-content">
+        <span class="bin-text">Bin</span>
+    </a>
+
+    <!-- Additional Section -->
+    <div class="section" id="bin-content">
+        <h2>Welcome to the Doxxing Grounds.</h2>
+        <p>This is where you'll find out if somebody has been doxxed by cutecatfan227.</p>
+    </div>
+
+    <!-- Hidden Content -->
+    <div class="hidden-content">
+        <h2>Nobody has been Doxxed Yet.</h2>
+    </div>
 </body>
 </html>
