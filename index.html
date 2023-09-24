@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            background-color: white; /* White background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Hide horizontal scrollbar caused by flashing text */
+        }
+
+        /* Rainbow flashing animation */
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        h1 {
+            animation: rainbow 3s linear infinite; /* Apply the rainbow animation to the h1 element */
+        }
+    </style>
+</head>
+<body>
+    <h1>cutecatfan227</h1>
+</body>
+</html>
